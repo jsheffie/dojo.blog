@@ -1,9 +1,10 @@
+import { useState } from "react";
 const Home = () => {
-    let name = "mario";
+    // let name = "mario";
+    const [name, setName] = useState('mario')
 
     const handleClick = () => {
-        name = 'luigi';
-        console.log(name);
+        setName('luigi'); // now name is reactive
     }
 
     return ( 
